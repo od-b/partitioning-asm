@@ -1,0 +1,43 @@
+numrange = [0, 2147483647] (RAND_MAX) {
+########## elements=1000000; samples=100 ##########
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 82.04     22.38    22.38 66664474     0.00     0.00  partition
+ 13.97     26.19     3.81      100     0.04     0.26  quicksort
+  3.74     27.21     1.02        1     1.02    27.21  run_sort
+  0.26     27.28     0.07                             _init
+
+########## elements=10000; samples=10000 ##########
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 77.70     15.33    15.33 66664779     0.00     0.00  partition
+ 17.49     18.78     3.45    10000     0.00     0.00  quicksort
+  4.66     19.70     0.92        1     0.92    19.70  run_sort
+  0.15     19.73     0.03                             _init
+
+########## elements=100; samples=1000000 ##########
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 59.32      7.00     7.00 66336995     0.00     0.00  partition
+ 30.76     10.63     3.63  1000000     0.00     0.00  quicksort
+  9.24     11.72     1.09        1     1.09    11.72  run_sort
+  0.68     11.80     0.08                             _init
+}
+
+
+numrange = [0, 1000] {
+########## elements=1000000; samples=100 ##########
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 98.10      2.06     2.06   999000     0.00     0.00  partition
+  1.90      2.10     0.04        1     0.04     2.10  quicksort
+  0.00      2.10     0.00        1     0.00     2.10  run_sort
+
+########## elements=100; samples=1000000 ##########
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 58.54      6.75     6.75 66343782     0.00     0.00  partition
+ 32.00     10.44     3.69  1000000     0.00     0.00  quicksort
+  9.28     11.51     1.07        1     1.07    11.51  run_sort
+  0.17     11.53     0.02                             _init
+}

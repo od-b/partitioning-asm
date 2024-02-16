@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  demo:
+    platform: linux/amd64
+    container_name: assembly_x86_64
+    build:
+      context: ../
+      dockerfile: .docker/Dockerfile
+    volumes:
+      - ../:/src

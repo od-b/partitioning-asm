@@ -1,0 +1,196 @@
+------------- ALL VARIATIONS OF SPEED O-FLAGS -------------
+
+#### ARRAY_ELEMENTS=100000, VAL_LIM=INT_MAX, N_RUNS=500, -O1
+   ASM:
+real	0m7.635s
+user	0m7.632s
+sys	0m0.003s
+   C:
+real	0m8.299s
+user	0m8.295s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=100000, VAL_LIM=INT_MAX, N_RUNS=500, -O2
+   ASM:
+real	0m7.186s
+user	0m7.184s
+sys	0m0.002s
+   C:
+real	0m7.529s
+user	0m7.527s
+sys	0m0.001s
+
+#### ARRAY_ELEMENTS=100000, VAL_LIM=INT_MAX, N_RUNS=500, -O3
+   ASM:
+real	0m7.195s
+user	0m7.194s
+sys	0m0.001s
+   C:
+real	0m8.005s
+user	0m8.002s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=100000, VAL_LIM=INT_MAX, N_RUNS=500, -Ofast
+   ASM:
+real	0m7.198s
+user	0m7.196s
+sys	0m0.002s
+   C:
+real	0m8.005s
+user	0m8.003s
+sys	0m0.003s
+
+
+--- various parameters, -O2 (by far the best performing C implementation) ---
+
+
+#### ARRAY_ELEMENTS=1000, VAL_LIM=1000, N_RUNS=100000, -O2
+   ASM:
+real	0m12.426s
+user	0m12.423s
+sys	0m0.004s
+   C:
+real	0m12.786s
+user	0m12.783s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=1000, VAL_LIM=INT_MAX, N_RUNS=100000, -O2
+   ASM:
+real	0m11.268s
+user	0m11.264s
+sys	0m0.003s
+   C:
+real	0m11.668s
+user	0m11.666s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=100, VAL_LIM=INT_MAX, N_RUNS=1000000, -O2
+   ASM:
+real	0m9.800s
+user	0m9.796s
+sys	0m0.004s
+   C:
+real	0m10.013s
+user	0m10.010s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=1000000, VAL_LIM=INT_MAX, N_RUNS=100, -O2
+   ASM:
+real	0m16.035s
+user	0m16.032s
+sys	0m0.004s
+   C:
+real	0m16.894s
+user	0m16.890s
+sys	0m0.003s
+
+#### ARRAY_ELEMENTS=2000000, VAL_LIM=INT_MAX, N_RUNS=50, -O2
+   ASM:
+real	0m16.512s
+user	0m16.507s
+sys	0m0.006s
+   C:
+real	0m17.321s
+user	0m17.320s
+sys	0m0.002s
+
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.200s
+user	0m7.198s
+sys	0m0.002s
+   C:
+real	0m7.548s
+user	0m7.543s
+sys	0m0.005s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.297s
+user	0m7.296s
+sys	0m0.002s
+   C:
+real	0m7.577s
+user	0m7.574s
+sys	0m0.002s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.201s
+user	0m7.197s
+sys	0m0.004s
+   C:
+real	0m7.513s
+user	0m7.508s
+sys	0m0.004s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.194s
+user	0m7.190s
+sys	0m0.003s
+   C:
+real	0m7.507s
+user	0m7.502s
+sys	0m0.005s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.198s
+user	0m7.194s
+sys	0m0.004s
+   C:
+real	0m7.517s
+user	0m7.513s
+sys	0m0.005s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.208s
+user	0m7.206s
+sys	0m0.002s
+   C:
+real	0m7.562s
+user	0m7.561s
+sys	0m0.002s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.194s
+user	0m7.190s
+sys	0m0.004s
+   C:
+real	0m7.518s
+user	0m7.513s
+sys	0m0.005s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.116s
+user	0m7.114s
+sys	0m0.001s
+   C:
+real	0m7.527s
+user	0m7.527s
+sys	0m0.000s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.175s
+user	0m7.172s
+sys	0m0.003s
+   C:
+real	0m7.556s
+user	0m7.550s
+sys	0m0.007s
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m7.132s
+user	0m7.129s
+sys	0m0.005s
+   C:
+real	0m7.546s
+user	0m7.539s
+sys	0m0.006s

@@ -1,0 +1,71 @@
+---- benchmark: native x64 intel i7(2018) tests for 02,03,0fast,0fast-std=99 #1 ----
+
+#### ARR_COUNT=100000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m4.185s
+user	0m4.185s
+sys	0m0.000s
+   C:
+real	0m4.447s
+user	0m4.447s
+sys	0m0.000s
+
+#### ARR_COUNT=1000000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	0m47.582s
+user	0m47.582s
+sys	0m0.000s
+   C:
+real	0m49.784s
+user	0m49.783s
+sys	0m0.000s
+
+#### ARR_COUNT=10000000, VAL_LIM=0, N_RUNS=500, -O2
+   ASM:
+real	9m2.722s
+user	9m2.721s
+sys	0m0.000s
+   C:
+real	9m27.356s
+user	9m27.326s
+sys	0m0.030s
+
+#### ARR_COUNT=1000000, VAL_LIM=0, N_RUNS=500, -O3
+   ASM:
+real	0m49.251s
+user	0m49.241s
+sys	0m0.010s
+   C:
+real	0m52.913s
+user	0m52.913s
+sys	0m0.000s
+
+#### ARR_COUNT=1000000, VAL_LIM=0, N_RUNS=500, -0fast
+   ASM:
+real	0m51.146s
+user	0m51.145s
+sys	0m0.000s
+   C:
+real	0m53.205s
+user	0m53.204s
+sys	0m0.000s
+
+#### ARR_COUNT=1000000, VAL_LIM=0, N_RUNS=500, -Ofast -std=c99
+   ASM:
+real	0m47.757s
+user	0m47.757s
+sys	0m0.000s
+   C:
+real	0m52.856s
+user	0m52.855s
+sys	0m0.000s
+
+#### ARR_COUNT=1000000, VAL_LIM=0, N_RUNS=500, -Ofast
+   ASM:
+real	0m48.791s
+user	0m48.791s
+sys	0m0.000s
+   C:
+real	0m52.141s
+user	0m52.141s
+sys	0m0.000s

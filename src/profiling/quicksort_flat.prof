@@ -1,0 +1,19 @@
+#######     n=10k, nums=[0, 1k], arrsize=10k     #######
+
+Flat profile: C, -O2
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 99.67     65.89    65.89  9789148     0.01     0.01  partition
+  0.18     66.01     0.12                             main
+  0.15     66.11     0.10    10620     0.01     6.21  quicksort
+
+Flat profile: C, -O3
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 99.73     73.67    73.67                             asm_partition
+  0.15     73.78     0.11                             main
+  0.12     73.87     0.09     9619     9.36     9.36  quicksort
